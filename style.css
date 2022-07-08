@@ -1375,13 +1375,14 @@
     .nav {
         background-color: var(--fondito);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
         top: 0px;
         gap: 1em;
         z-index: 200;
         width: 100%;
         text-align: center;
+        justify-content: center;
         margin-top: -110%;
         transition: margin-top 0.5s;
     }
@@ -2046,6 +2047,7 @@
         width: 100%;
         justify-content: center;
         text-align: center;
+        justify-content: center;
         margin-top: -110%;
         transition: margin-top 0.5s;
     }
@@ -2372,7 +2374,7 @@
     .nav {
         background-color: var(--fondito);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
         top: 0px;
         gap: 1em;
@@ -2380,6 +2382,7 @@
         width: 100%;
         text-align: center;
         margin-top: -110%;
+        justify-content: center;
         transition: margin-top 0.5s;
     }
 
