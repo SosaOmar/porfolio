@@ -73,20 +73,1031 @@
         position: absolute;
         top: 100px;
         padding: 1em;
-        width: 100%;
+        max-width: 350px;
+        margin: auto;
+        display: block;
+        left: 0;
+        right: 0;
+        top:100px
     }
     .segunda {
-        display: block;
         width: 100%;
         position: absolute;
         top: 360px;
     }
 
-    .circulo1 img {
+    .circulo1{
+        display: flex;
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        overflow: hidden;
+        right: 0px;
+        top: 900px;
+    }
+
+    .circulo1 img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .circulo2 img {
         position: absolute;
         width: 100px;
-        right: -2.8em;
-        top: 51em;
+        left: -2.8em;
+        top: 92em;
+    }
+
+
+    .introduccion {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenperfil {
+        border-radius: 3em;
+        position: relative;
+        z-index: 100;
+    }
+
+    .introduccion img {
+        width: 14em;
+        align-self: center;
+
+    }
+
+    .introduccion_texto {
+        margin-top: 20px;
+    }
+
+    .introduccion_texto h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .introduccion_texto p {
+        font-size: 25px;
+        font-weight: 400;
+        color: var(--gray);
+    }
+
+    .introduccion__redes {
+        display: flex;
+        justify-content: center;
+        gap: 1.4em;
+        margin-top: .5em;
+    }
+
+    .introduccion__redes img {
+        width: 40px;
+    }
+
+    /***********************Acerca de mí*************************/
+
+    .acerca_de_mi {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 8em;
+    }
+
+    .acerca_de_mi h2 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .acerca_de_mi p {
+        text-align: center;
+        color: var(--gray);
+    }
+
+    /********************Mis habilidades************************/
+
+    .mis_habilidades {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1em;
+        justify-content: space-around;
+        gap: 1em;
+        margin-top: 2em;
+    }
+
+    .mis_habilidades h2 {
+        align-self: flex-start;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .mis_habilidades__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 47%;
+        gap: 0.5em;
+
+    }
+
+    .mis_habilidades__item__img {
+        background-color: var(--fondito);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .mis_habilidades__item__img img {
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    .mis_habilidades__item p {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    /******************Experiencia*************************/
+    .experiencia {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+
+    .experiencia h2 {
+        font-size: 25px;
+    }
+
+    .experiencia__experiencias {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .experiencia__linea {
+        width: 100%;
+        height: 1px;
+        background-color: var(--gray);
+    }
+
+    .experiencia__empresas {
+        width: 55%;
+    }
+
+    .experiencia__experiencias--años {
+        color: var(--gray);
+    }
+
+    .empresa {
+        color: var(--gray);
+    }
+
+    .empresa_puesto {
+        font-weight: 500;
+    }
+
+
+    /******************* Portafolio ************************/
+
+    .portafolio {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .portafolio h2 {
+        font-size: 25px;
+    }
+
+    .portafolio__img {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .portafolio img {
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
+    }
+
+    /******************* Contacto ***************************/
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin-bottom: 100px;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .contacto h2 {
+        font-size: 25px;
+    }
+
+
+    .contacto__medios {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 0.5em;
+    }
+
+    .contacto__medios img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacto__medios p {
+        font-size: 15px;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+    .contacto__medio {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .imagen__radio {
+        width: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+        border: solid 1px var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .Contacto__medio__p {
+        color: var(--gray);
+    }
+}
+
+/************** 533-599 ************/
+@media (min-width:533px) and (max-width:599px){
+    body {
+        background-color: var(--black);
+        font-size: 16px;
+    }
+
+    .container {
+        color: var(--white);
+        margin-top: 80px;
+        position: relative;
+        z-index: 50;
+        width: 100%;
+    }
+
+    .menu {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        z-index: 300;
+    }
+
+    .nav {
+        background-color: var(--fondito);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        gap: 1em;
+        z-index: 200;
+        width: 100%;
+        text-align: center;
+        margin-top: -110%;
+        transition: margin-top 0.5s;
+    }
+
+    .show_nav {
+        margin-top: 0%;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: var(--white);
+        padding: 1em;
+        transition: background-color 0.5s;
+    }
+
+    .nav a:hover {
+        background-color: var(--black);
+    }
+
+    /****** Los amados SVG ***********/
+
+    .primera{
+        position: absolute;
+        top: 100px;
+        padding: 1em;
+        max-width: 350px;
+        margin: auto;
+        display: block;
+        left: 0;
+        right: 0;
+        top:100px
+    }
+
+    .segunda {
+        width: 100%;
+        position: absolute;
+        top: 300px;
+    }
+
+    .circulo1{
+        display: flex;
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        overflow: hidden;
+        right: 0px;
+        top: 900px;
+    }
+
+    .circulo1 img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .circulo2 img {
+        position: absolute;
+        width: 100px;
+        left: -2.8em;
+        top: 92em;
+    }
+
+
+    .introduccion {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenperfil {
+        border-radius: 3em;
+        position: relative;
+        z-index: 100;
+    }
+
+    .introduccion img {
+        width: 14em;
+        align-self: center;
+
+    }
+
+    .introduccion_texto {
+        margin-top: 20px;
+    }
+
+    .introduccion_texto h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .introduccion_texto p {
+        font-size: 25px;
+        font-weight: 400;
+        color: var(--gray);
+    }
+
+    .introduccion__redes {
+        display: flex;
+        justify-content: center;
+        gap: 1.4em;
+        margin-top: .5em;
+    }
+
+    .introduccion__redes img {
+        width: 40px;
+    }
+
+    /***********************Acerca de mí*************************/
+
+    .acerca_de_mi {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 8em;
+    }
+
+    .acerca_de_mi h2 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .acerca_de_mi p {
+        text-align: center;
+        color: var(--gray);
+    }
+
+    /********************Mis habilidades************************/
+
+    .mis_habilidades {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1em;
+        justify-content: space-around;
+        gap: 1em;
+        margin-top: 2em;
+    }
+
+    .mis_habilidades h2 {
+        align-self: flex-start;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .mis_habilidades__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 47%;
+        gap: 0.5em;
+
+    }
+
+    .mis_habilidades__item__img {
+        background-color: var(--fondito);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .mis_habilidades__item__img img {
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    .mis_habilidades__item p {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    /******************Experiencia*************************/
+    .experiencia {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+
+    .experiencia h2 {
+        font-size: 25px;
+    }
+
+    .experiencia__experiencias {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .experiencia__linea {
+        width: 100%;
+        height: 1px;
+        background-color: var(--gray);
+    }
+
+    .experiencia__empresas {
+        width: 55%;
+    }
+
+    .experiencia__experiencias--años {
+        color: var(--gray);
+    }
+
+    .empresa {
+        color: var(--gray);
+    }
+
+    .empresa_puesto {
+        font-weight: 500;
+    }
+
+
+    /******************* Portafolio ************************/
+
+    .portafolio {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .portafolio h2 {
+        font-size: 25px;
+    }
+
+    .portafolio__img {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .portafolio img {
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
+    }
+
+    /******************* Contacto ***************************/
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin-bottom: 100px;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .contacto h2 {
+        font-size: 25px;
+    }
+
+
+    .contacto__medios {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 0.5em;
+    }
+
+    .contacto__medios img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacto__medios p {
+        font-size: 15px;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+    .contacto__medio {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .imagen__radio {
+        width: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+        border: solid 1px var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .Contacto__medio__p {
+        color: var(--gray);
+    }
+}
+
+/************** 600-700 ************/
+@media (min-width:600px) and (max-width:751px){
+    body {
+        background-color: var(--black);
+        font-size: 16px;
+    }
+
+    .container {
+        color: var(--white);
+        margin-top: 80px;
+        position: relative;
+        z-index: 50;
+        width: 100%;
+    }
+
+    .menu {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        z-index: 300;
+    }
+
+    .nav {
+        background-color: var(--fondito);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        gap: 1em;
+        z-index: 200;
+        width: 100%;
+        text-align: center;
+        margin-top: -110%;
+        transition: margin-top 0.5s;
+    }
+
+    .show_nav {
+        margin-top: 0%;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: var(--white);
+        padding: 1em;
+        transition: background-color 0.5s;
+    }
+
+    .nav a:hover {
+        background-color: var(--black);
+    }
+
+    /****** Los amados SVG ***********/
+
+    .primera{
+        position: absolute;
+        top: 100px;
+        padding: 1em;
+        width: 100%;
+    }
+    .segunda {
+        width: 100%;
+        position: absolute;
+        top: 220px;
+    }
+
+    .circulo1{
+        display: flex;
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        overflow: hidden;
+        right: 0px;
+        top: 900px;
+    }
+
+    .circulo1 img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .circulo2 img {
+        position: absolute;
+        width: 100px;
+        left: -2.8em;
+        top: 92em;
+    }
+
+
+    .introduccion {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenperfil {
+        border-radius: 3em;
+        position: relative;
+        z-index: 100;
+    }
+
+    .introduccion img {
+        width: 14em;
+        align-self: center;
+
+    }
+
+    .introduccion_texto {
+        margin-top: 20px;
+    }
+
+    .introduccion_texto h1 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .introduccion_texto p {
+        font-size: 25px;
+        font-weight: 400;
+        color: var(--gray);
+    }
+
+    .introduccion__redes {
+        display: flex;
+        justify-content: center;
+        gap: 1.4em;
+        margin-top: .5em;
+    }
+
+    .introduccion__redes img {
+        width: 40px;
+    }
+
+    /***********************Acerca de mí*************************/
+
+    .acerca_de_mi {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 8em;
+    }
+
+    .acerca_de_mi h2 {
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .acerca_de_mi p {
+        text-align: center;
+        color: var(--gray);
+    }
+
+    /********************Mis habilidades************************/
+
+    .mis_habilidades {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1em;
+        justify-content: space-around;
+        gap: 1em;
+        margin-top: 2em;
+    }
+
+    .mis_habilidades h2 {
+        align-self: flex-start;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 500;
+    }
+
+    .mis_habilidades__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 47%;
+        gap: 0.5em;
+
+    }
+
+    .mis_habilidades__item__img {
+        background-color: var(--fondito);
+        border-radius: 50%;
+        width: 80px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .mis_habilidades__item__img img {
+        width: 50px;
+        height: 50px;
+        align-self: center;
+    }
+
+    .mis_habilidades__item p {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    /******************Experiencia*************************/
+    .experiencia {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        padding: 1em;
+        margin-top: 2em;
+    }
+
+    .experiencia h2 {
+        font-size: 25px;
+    }
+
+    .experiencia__experiencias {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .experiencia__linea {
+        width: 100%;
+        height: 1px;
+        background-color: var(--gray);
+    }
+
+    .experiencia__empresas {
+        width: 55%;
+    }
+
+    .experiencia__experiencias--años {
+        color: var(--gray);
+    }
+
+    .empresa {
+        color: var(--gray);
+    }
+
+    .empresa_puesto {
+        font-weight: 500;
+    }
+
+
+    /******************* Portafolio ************************/
+
+    .portafolio {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .portafolio h2 {
+        font-size: 25px;
+    }
+
+    .portafolio__img {
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .portafolio img {
+        width: 100%;
+        max-width: 400px;
+        align-self: center;
+    }
+
+    /******************* Contacto ***************************/
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin-bottom: 100px;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .contacto h2 {
+        font-size: 25px;
+    }
+
+
+    .contacto__medios {
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        gap: 0.5em;
+    }
+
+    .contacto__medios img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacto__medios p {
+        font-size: 15px;
+        font-weight: 400;
+        display: inline-block;
+    }
+
+    .contacto__medio {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-between;
+    }
+
+    .imagen__radio {
+        width: 60px;
+        min-height: 60px;
+        border-radius: 50%;
+        border: solid 1px var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
+    }
+
+    .Contacto__medio__p {
+        color: var(--gray);
+    }
+}
+
+/************* 752-879 ***********/
+@media (min-width:752px) and (max-width:879px){
+    body {
+        background-color: var(--black);
+        font-size: 16px;
+    }
+
+    .container {
+        color: var(--white);
+        margin-top: 80px;
+        position: relative;
+        z-index: 50;
+        width: 100%;
+    }
+
+    .menu {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        z-index: 300;
+    }
+
+    .nav {
+        background-color: var(--fondito);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        gap: 1em;
+        z-index: 200;
+        width: 100%;
+        text-align: center;
+        margin-top: -110%;
+        transition: margin-top 0.5s;
+    }
+
+    .show_nav {
+        margin-top: 0%;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: var(--white);
+        padding: 1em;
+        transition: background-color 0.5s;
+    }
+
+    .nav a:hover {
+        background-color: var(--black);
+    }
+
+    /****** Los amados SVG ***********/
+
+    .primera{
+        position: absolute;
+        top: 100px;
+        padding: 1em;
+        max-width: 350px;
+        margin: auto;
+        display: block;
+        left: 0;
+        right: 0;
+        top:100px
+    }
+
+    .segunda {
+        width: 100%;
+        position: absolute;
+        top: 152px;
+    }
+
+    .circulo1{
+        display: flex;
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        overflow: hidden;
+        right: 0px;
+        top: 900px;
+    }
+
+    .circulo1 img{
+        width: 100px;
+        height: 100px;
     }
 
     .circulo2 img {
@@ -337,143 +1348,11 @@
 }
 
 
-/************** 533-599 ************/
-@media (min-width:533px) and (max-width:599px){
-   
-    /****** Los amados SVG ***********/
-    .primera {
-        position: absolute;
-        top: 90px;
-        padding: 1em;
-    }
-
-    .primera svg {
-        width: 100%;
-    }
-
-    .segunda {
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: 280px;
-    }
-
-    .circulo1 img {
-        position: absolute;
-        width: 100px;
-        right: -2.8em;
-        top: 51em;
-    }
-
-    .circulo2 img {
-        position: absolute;
-        width: 100px;
-        left: -2.8em;
-        top: 90em;
-    }
-}
-
-/************** 600-740 ************/
-@media (min-width:600px) and (max-width:740px){
-   
-    /****** Los amados SVG ***********/
-    .primera{
-        position: absolute;
-        top: 80px;
-        width: 100%;
-    }
-
-    .segunda {
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: 220px;
-    }
-
-    .circulo1 img {
-        position: absolute;
-        width: 100px;
-        right: -2.8em;
-        top: 51em;
-    }
-
-    .circulo2 img {
-        position: absolute;
-        width: 100px;
-        left: -2.8em;
-        top: 85em;
-    }
-}
-
-/************** 741-832 ************/
-@media (min-width:741px) and (max-width:832px){
-   
-    /****** Los amados SVG ***********/
-    .primera{
-        position: absolute;
-        top: 30px;
-        width: 100%;
-    }
-
-
-    .segunda {
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: 130px;
-    }
-
-    .circulo1 img {
-        position: absolute;
-        width: 100px;
-        right: -2.8em;
-        top: 51em;
-    }
-
-    .circulo2 img {
-        position: absolute;
-        width: 100px;
-        left: -2.8em;
-        top: 83em;
-    }
-}
-
-/************** 832-900 ************/
-@media (min-width:832px) and (max-width:899px){
-   
-    /****** Los amados SVG ***********/
-    .primera{
-        position: absolute;
-        top: 30px;
-        width: 100%;
-    }
-
-    .segunda {
-        display: block;
-        width: 100%;
-        position: absolute;
-        top: 90px;
-    }
-
-    .circulo1 img {
-        position: absolute;
-        width: 100px;
-        right: -2.8em;
-        top: 51em;
-    }
-
-    .circulo2 img {
-        position: absolute;
-        width: 100px;
-        left: -2.8em;
-        top: 85em;
-    }
-}
-
-/************** 900-1000 ************/
-@media (min-width:900px) and (max-width:1000px) {
+/************** 880-1000 ************/
+@media (min-width:880px) and (max-width:1000px) {
     body {
-        font-size: 18px;
+        background-color: var(--black);
+        font-size: 16px;
     }
 
     .container {
@@ -482,7 +1361,6 @@
         position: relative;
         z-index: 50;
         width: 100%;
-        padding: 5em;
     }
 
     .menu {
@@ -492,11 +1370,6 @@
         top: 10px;
         right: 10px;
         z-index: 300;
-    }
-
-    .menu svg {
-        width: 30px;
-        height: 30px;
     }
 
     .nav {
@@ -533,28 +1406,42 @@
     .primera{
         position: absolute;
         top: 100px;
-        width: 100%;
+        padding: 1em;
+        max-width: 350px;
+        margin: auto;
+        display: block;
+        left: 0;
+        right: 0;
+        top:100px
     }
-
     .segunda {
         width: 100%;
         position: absolute;
-        top: 410px;
+        top: 94px;
     }
 
-    .circulo1 img {
+    .circulo1{
+        display: flex;
         position: absolute;
+        width: 50px;
+        height: 100px;
+        overflow: hidden;
+        right: 0px;
+        top: 900px;
+    }
+
+    .circulo1 img{
         width: 100px;
-        right: -2.8em;
-        top: 51em;
+        height: 100px;
     }
 
     .circulo2 img {
         position: absolute;
         width: 100px;
         left: -2.8em;
-        top: 83em;
+        top: 92em;
     }
+
 
     .introduccion {
         margin: auto;
@@ -570,7 +1457,7 @@
     }
 
     .introduccion img {
-        width: 17em;
+        width: 14em;
         align-self: center;
 
     }
@@ -580,12 +1467,12 @@
     }
 
     .introduccion_texto h1 {
-        font-size: 60px;
+        font-size: 40px;
         font-weight: 500;
     }
 
     .introduccion_texto p {
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 400;
         color: var(--gray);
     }
@@ -598,7 +1485,7 @@
     }
 
     .introduccion__redes img {
-        width: 60px;
+        width: 40px;
     }
 
     /***********************Acerca de mí*************************/
@@ -609,11 +1496,10 @@
         flex-direction: column;
         gap: 1em;
         margin-top: 8em;
-        text-align: center;
     }
 
     .acerca_de_mi h2 {
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 500;
     }
 
@@ -628,7 +1514,7 @@
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        padding: 1em 5em;
+        padding: 1em;
         justify-content: space-around;
         gap: 1em;
         margin-top: 2em;
@@ -637,7 +1523,7 @@
     .mis_habilidades h2 {
         align-self: flex-start;
         width: 100%;
-        font-size: 40px;
+        font-size: 25px;
         font-weight: 500;
     }
 
@@ -653,12 +1539,18 @@
 
     .mis_habilidades__item__img {
         background-color: var(--fondito);
+        border-radius: 50%;
         width: 80px;
         height: 80px;
-        border-radius: 50%;
         display: flex;
         justify-content: center;
 
+    }
+
+    .mis_habilidades__item__img img {
+        width: 50px;
+        height: 50px;
+        align-self: center;
     }
 
     .mis_habilidades__item p {
@@ -674,12 +1566,10 @@
         justify-content: center;
         padding: 1em;
         margin-top: 2em;
-
     }
 
     .experiencia h2 {
-        font-size: 40px;
-        align-self: center;
+        font-size: 25px;
     }
 
     .experiencia__experiencias {
@@ -721,18 +1611,19 @@
     }
 
     .portafolio h2 {
-        font-size: 40px;
-        align-self: center;
+        font-size: 25px;
     }
 
     .portafolio__img {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         gap: 2em;
     }
 
     .portafolio img {
         width: 100%;
+        max-width: 400px;
+        align-self: center;
     }
 
     /******************* Contacto ***************************/
@@ -743,20 +1634,18 @@
         margin-bottom: 100px;
         gap: 2em;
         margin-top: 2em;
-        justify-content: center;
     }
 
     .contacto h2 {
-        font-size: 40px;
-        align-self: center;
+        font-size: 25px;
     }
 
 
     .contacto__medios {
         display: flex;
         flex-direction: row;
+        text-align: center;
         gap: 0.5em;
-        justify-content: center;
     }
 
     .contacto__medios img {
@@ -765,20 +1654,27 @@
     }
 
     .contacto__medios p {
+        font-size: 15px;
         font-weight: 400;
-        display: flex;
-        justify-content: center;
+        display: inline-block;
     }
 
     .contacto__medio {
         display: flex;
-        width: 20%;
+        flex-direction: column;
+        width: 50%;
+        justify-content: space-between;
     }
 
     .imagen__radio {
         width: 60px;
         min-height: 60px;
-        border: solid 1px var(--gray);
+        border-radius: 50%;
+        border: solid 1px var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        align-self: center;
     }
 
     .Contacto__medio__p {
@@ -849,12 +1745,19 @@
     .primera{
         position: absolute;
         top: 100px;
-        width: 100%;
+        padding: 1em;
+        max-width: 500px;
+        margin: auto;
+        display: block;
+        left: 0;
+        right: 0;
+        top:200px
     }
 
     .segunda {
         display: block;
-        width: 100%;
+        width: 110%;
+        margin-left: -60px;
         position: absolute;
         top: 320px;
     }
@@ -1135,12 +2038,13 @@
     .nav {
         background-color: var(--fondito);
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         position: absolute;
         top: 0px;
         gap: 1em;
         z-index: 200;
         width: 100%;
+        justify-content: center;
         text-align: center;
         margin-top: -110%;
         transition: margin-top 0.5s;
@@ -1166,21 +2070,33 @@
     .primera{
         position: absolute;
         top: 100px;
-        width: 100%;
-    }
-
-    .segunda {
+        padding: 1em;
+        max-width: 500px;
+        margin: auto;
         display: block;
+        left: 0;
+        right: 0;
+        top:200px
+    }
+    .segunda {
         width: 100%;
         position: absolute;
         top: 250px;
     }
 
-    .circulo1 img {
+    .circulo1{
+        display: flex;
         position: absolute;
+        width: 50px;
+        height: 100px;
+        overflow: hidden;
+        right: 0px;
+        top: 900px;
+    }
+
+    .circulo1 img{
         width: 100px;
-        right: -2.8em;
-        top: 51em;
+        height: 100px;
     }
 
     .circulo2 img {
@@ -1366,7 +2282,345 @@
     }
 
     .portafolio img {
-        max-width: 300px;
+        width: 100%;
+    }
+
+    /******************* Contacto ***************************/
+    .contacto {
+        display: flex;
+        flex-direction: column;
+        padding: 1em;
+        margin-bottom: 100px;
+        gap: 2em;
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    .contacto h2 {
+        font-size: 40px;
+        align-self: center;
+    }
+
+
+    .contacto__medios {
+        display: flex;
+        flex-direction: row;
+        gap: 0.5em;
+        justify-content: center;
+    }
+
+    .contacto__medios img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .contacto__medios p {
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contacto__medio {
+        display: flex;
+        width: 20%;
+    }
+
+    .imagen__radio {
+        width: 60px;
+        min-height: 60px;
+        border: solid 1px var(--gray);
+    }
+
+    .Contacto__medio__p {
+        color: var(--gray);
+    }
+}
+
+
+
+
+
+/************** 1200 ************/
+@media (min-width:1201px){
+    body {
+        font-size: 18px;
+    }
+
+    .container {
+        color: var(--white);
+        margin-top: 80px;
+        position: relative;
+        z-index: 50;
+        width: 100%;
+        padding: 5em;
+    }
+
+    .menu {
+        position: absolute;
+        width: 30px;
+        height: 30px;
+        top: 10px;
+        right: 10px;
+        z-index: 300;
+    }
+
+    .menu svg {
+        width: 30px;
+        height: 30px;
+    }
+
+    .nav {
+        background-color: var(--fondito);
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0px;
+        gap: 1em;
+        z-index: 200;
+        width: 100%;
+        text-align: center;
+        margin-top: -110%;
+        transition: margin-top 0.5s;
+    }
+
+    .show_nav {
+        margin-top: 0%;
+    }
+
+    .nav a {
+        text-decoration: none;
+        color: var(--white);
+        padding: 1em;
+        transition: background-color 0.5s;
+    }
+
+    .nav a:hover {
+        background-color: var(--black);
+    }
+
+    /****** Los amados SVG ***********/
+
+    .primera{
+        position: absolute;
+        top: 100px;
+        padding: 1em;
+        max-width: 500px;
+        margin: auto;
+        display: block;
+        left: 0;
+        right: 0;
+        top:200px
+    }
+    .segunda {
+        position: absolute;
+        top: 250px;
+        max-width: 1200px;
+        margin: auto;
+        display: block;
+        left: 0;
+        right: 0;
+    }
+
+    .circulo1{
+        display: flex;
+        position: absolute;
+        width: 50px;
+        height: 100px;
+        overflow: hidden;
+        right: 0px;
+        top: 900px;
+    }
+
+    .circulo1 img{
+        width: 100px;
+        height: 100px;
+    }
+
+    .circulo2 img {
+        position: absolute;
+        width: 100px;
+        left: -2.8em;
+        top: 83em;
+    }
+
+    .introduccion {
+        margin: auto;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .imagenperfil {
+        border-radius: 3em;
+        position: relative;
+        z-index: 100;
+    }
+
+    .introduccion img {
+        width: 17em;
+        align-self: center;
+
+    }
+
+    .introduccion_texto {
+        margin-top: 20px;
+    }
+
+    .introduccion_texto h1 {
+        font-size: 60px;
+        font-weight: 500;
+    }
+
+    .introduccion_texto p {
+        font-size: 40px;
+        font-weight: 400;
+        color: var(--gray);
+    }
+
+    .introduccion__redes {
+        display: flex;
+        justify-content: center;
+        gap: 1.4em;
+        margin-top: .5em;
+    }
+
+    .introduccion__redes img {
+        width: 60px;
+    }
+
+    /***********************Acerca de mí*************************/
+
+    .acerca_de_mi {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        margin-top: 8em;
+        text-align: center;
+    }
+
+    .acerca_de_mi h2 {
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .acerca_de_mi p {
+        text-align: center;
+        color: var(--gray);
+    }
+
+    /********************Mis habilidades************************/
+
+    .mis_habilidades {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 1em 5em;
+        justify-content: space-around;
+        gap: 1em;
+        margin-top: 2em;
+    }
+
+    .mis_habilidades h2 {
+        align-self: flex-start;
+        width: 100%;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .mis_habilidades__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        width: 47%;
+        gap: 0.5em;
+
+    }
+
+    .mis_habilidades__item__img {
+        background-color: var(--fondito);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .mis_habilidades__item p {
+        font-size: 18px;
+        display: inline-block;
+    }
+
+    /******************Experiencia*************************/
+    .experiencia {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        justify-content: center;
+        padding: 1em;
+        margin-top: 2em;
+
+    }
+
+    .experiencia h2 {
+        font-size: 40px;
+        align-self: center;
+    }
+
+    .experiencia__experiencias {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .experiencia__linea {
+        width: 100%;
+        height: 1px;
+        background-color: var(--gray);
+    }
+
+    .experiencia__empresas {
+        width: 55%;
+    }
+
+    .experiencia__experiencias--años {
+        color: var(--gray);
+    }
+
+    .empresa {
+        color: var(--gray);
+    }
+
+    .empresa_puesto {
+        font-weight: 500;
+    }
+
+
+    /******************* Portafolio ************************/
+
+    .portafolio {
+        padding: 1em;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+        margin-top: 2em;
+    }
+
+    .portafolio h2 {
+        font-size: 40px;
+        align-self: center;
+    }
+
+    .portafolio__img {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 2em;
+    }
+
+    .portafolio img {
+        width: 100%;
     }
 
     /******************* Contacto ***************************/
