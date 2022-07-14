@@ -15,7 +15,6 @@
     font-family: 'Rubik', sans-serif;
 }
 
-@media (min-width:375px) {
     body {
         background-color: var(--black);
         font-size: 16px;
@@ -346,7 +345,6 @@
     .Contacto__medio__p {
         color: var(--gray);
     }
-}
 
 /************** 533-599 ************/
 @media (min-width:533px) and (max-width:599px){
